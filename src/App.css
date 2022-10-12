@@ -1,38 +1,205 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 .App {
-  text-align: center;
+  padding:30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.copyrightContainer{
+
+}
+.copyrightContainer > h3 {
+  font-style: normal;
+font-weight: 600;
+font-size: 50px;
+line-height: 75px;
+/* identical to box height */
+
+letter-spacing: 0.03em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.copyrightContainer > p {
+ 
+font-weight: 400;
+font-size: 18px;
+line-height: 172%;
+/* or 31px */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+letter-spacing: 0.03em;
+
+}
+.rating-paragraph ,p{
+  display: flex;
+  align-items: center;
+  gap: 5px
+  
+}
+.rating-paragraph > p{
+  font-size: 16px;
+  font-weight: 500;
+}
+.sm-card{  
   display: flex;
   flex-direction: column;
+  gap:5px;
+  line-height: 1;
+  align-items: center;
+  
+}
+.card-time{
+font-weight: 600;
+font-size: 14.6471px;
+line-height: 17px;
+text-align: center;
+
+}
+.details{
+ 
+  font-weight: 400;
+font-size: 11.3922px;
+line-height:17px;
+}
+.smcardContainer{
+  display: flex;
+  gap: 40px;
+}
+.btn{
+  font-weight: 600;
+font-size: 24px;
+line-height: 36px;
+color: #FFFFFF;
+background: #3C68FF;
+border-radius: 1px;
+border: none;
+padding: 19px 38px;
+margin-top: 63px;
+}
+.btn-container > p{
+  font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+letter-spacing: 0.03em;
+margin-top: 24px;
+}
+
+.companyCard{
+  width: 440px;
+  height: 208px;
+  left: 867px;
+  top: 485px;
+  border-radius: 10px;
+  margin-top: 46px;
+  letter-spacing: 0.01em;
+}
+.profileImg > p{
+  font-weight: 500;
+font-size: 18px;
+line-height: 140.5%;
+/* or 25px */
+
+
+}
+.companyLOgo{
+
+}
+.btnParent{
+  
+  
+}
+.mentor{
+  width: 174px;
+  height: 42px;
+  left: 1000px;
+  top: 464px;
+  color: #FFFFFF;
+  background: #3C68FF;
+  border-radius: 4px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-weight: 500;
+font-size: 16px;
+line-height: 140.5%;
+/* or 22px */
+letter-spacing: 0.01em;
+margin: auto;
+margin-bottom: 30px;
+
+}
+.normalParagraph{
+  font-weight: 400;
+font-size: 18px;
+line-height: 140.5%;
+/* or 25px */
+letter-spacing: 0.01em;
+color: #121212;
+}
+.companyLOgo > img{
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.profileLogo{
+  display: flex;
+  gap:56px;
 }
+.mainContainer{
+ 
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+.firstBtn{
+  display: block;
+}
+.SecoundBtn{
+  display: none;
+ 
+}
+.btns{
+  width: 191px;
+height: 64.66px;
+left: 85px;
+top: 557px;
+background: #3C68FF;
+border-radius: 0.593168px;
+color: #FFFFFF;
+text-align: center;
+margin: 20px auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.enrollmaincontainer{
+  margin-top: -100px;
+}
+@media screen and (max-width:450px){
+  .mainContainer{
+ 
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+  
   }
-  to {
-    transform: rotate(360deg);
+  .enrollmaincontainer{
+    margin-top: 0;
+  }
+  .companyCard{
+    display: none;
+  }
+  .btn{
+    text-align: center;
+  }
+  .firstBtn{
+    display: none;
+  }
+  .SecoundBtn{
+    display: block;
+   
   }
 }
